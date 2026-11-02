@@ -517,6 +517,36 @@
   // ---- News section ------------------------------------------------------
   const newsItems = [
     {
+      url: "https://www.mt.co.kr/future/2026/10/19/2026101910043442480",
+      publisher: "mt.co.kr",
+      date: "2026-10-19",
+      title: {
+        ko: "10주만에 고객·PoC 확보하고 첫 매출까지…‘스파크클로 1기’ 성과",
+        en: "Customers, PoCs and first revenue in 10 weeks: SparkClaw Cohort 1 results"
+      },
+      image: "assets/news/mt-2026101910043442480.jpg"
+    },
+    {
+      url: "https://view.asiae.co.kr/article/2026081409353073689",
+      publisher: "asiae.co.kr",
+      date: "2026-08-14",
+      title: {
+        ko: "스파크랩, AI 창업가 육성 ‘스파크클로’ 부트캠프 진행",
+        en: "SparkLabs kicks off the SparkClaw bootcamp for AI-native founders"
+      },
+      image: "assets/news/asiae-2026081409353073689.jpg"
+    },
+    {
+      url: "https://view.asiae.co.kr/article/2026051214011695683",
+      publisher: "asiae.co.kr",
+      date: "2026-05-13",
+      title: {
+        ko: "“1인 창업가에 꽂혔다”…AC 업계, AI 시대 ‘솔로프러너’ 발굴 속도",
+        en: "Accelerators race to find ‘solopreneurs’ in the AI era"
+      },
+      image: "assets/news/asiae-2026051214011695683.jpg"
+    },
+    {
       url: "https://www.donga.com/news/Economy/article/all/20260507/133881508/2",
       publisher: "donga.com",
       date: "2026-05-08",
