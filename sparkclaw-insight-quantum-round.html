@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quantum Round — 아무도 안 가르쳐주는 비선형 펀딩 — Jimmy Kim | SparkClaw Insights</title>
+  <meta name="description" content="2x 룰을 깨는 세 가지 조건, 990원 전략, 그리고 설계된 오버서브스크라이브. 시리즈A를 준비하는 창업자를 위한 SparkLabs Co-Founder 김호민(Jimmy Kim)의 기고문." />
+  <meta name="author" content="김호민 (Jimmy Kim)" />
+  <meta property="og:title" content="Quantum Round — 아무도 안 가르쳐주는 비선형 펀딩" />
+  <meta property="og:description" content="2x 룰을 깨는 세 가지 조건, 990원 전략, 그리고 설계된 오버서브스크라이브. 시리즈A를 준비하는 창업자를 위한 SparkLabs Co-Founder 김호민(Jimmy Kim)의 기고문." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.sparkclaw.co.kr/sparkclaw-insight-quantum-round" />
+  <meta property="og:image" content="https://www.sparkclaw.co.kr/assets/Insights/quantum-round.jpg" />
+  <meta property="article:author" content="김호민 (Jimmy Kim)" />
+  <meta property="article:published_time" content="2026-11-02" />
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Pretendard Variable', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+      background: #FAFAF8;
+      color: #1a1a18;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+    }
+
+    /* Header */
+    .eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #BA7517;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(24px, 4vw, 32px);
+      font-weight: 700;
+      line-height: 1.3;
+      color: #111110;
+      margin-bottom: 1.25rem;
+      word-break: keep-all;
+    }
+
+    /* Tags */
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 1.5rem;
+    }
+    .tag {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 11px;
+      border-radius: 20px;
+      background: #FEF3E2;
+      color: #854F0B;
+      border: 1px solid #FAC775;
+      letter-spacing: 0.02em;
+    }
+
+    /* Byline */
+    .byline-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 1.25rem 0;
+      border-top: 1px solid #E8E6DF;
+      border-bottom: 1px solid #E8E6DF;
+      margin-bottom: 2.5rem;
+    }
+    .avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: #FEF3E2;
+      border: 1px solid #FAC775;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      color: #BA7517;
+      flex-shrink: 0;
+    }
+    .byline-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: #111110;
+      margin-bottom: 2px;
+    }
+    .byline-meta {
+      font-size: 12px;
+      color: #888780;
+    }
+
+    /* Body */
+    .article-body {
+      font-size: 16.5px;
+      line-height: 1.9;
+      color: #2c2c2a;
+      word-break: keep-all;
+    }
+    .article-body p {
+      margin-bottom: 1.5rem;
+    }
+    .article-body h2 {
+      font-size: clamp(19px, 2.6vw, 23px);
+      font-weight: 700;
+      line-height: 1.4;
+      color: #111110;
+      margin: 2.75rem 0 1rem;
+      word-break: keep-all;
+    }
+    .article-body ol {
+      margin: 0 0 1.5rem 1.35rem;
+    }
+    .article-body ol li {
+      margin-bottom: 0.6rem;
+    }
+    .article-body figure {
+      margin: 2.25rem 0;
+    }
+    .article-body figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+    }
+    .article-body figcaption {
+      font-size: 13px;
+      color: #888780;
+      margin-top: 10px;
+      text-align: center;
+      word-break: keep-all;
+    }
+    .article-body a { color: #BA7517; font-weight: 600; }
+
+    /* Pull quote */
+    .pull-quote {
+      margin: 2.25rem 0;
+      padding: 1.5rem 1.75rem;
+      background: #FEF3E2;
+      border-left: 4px solid #EF9F27;
+      border-radius: 0 8px 8px 0;
+    }
+    .pull-quote p {
+      margin: 0;
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 1.65;
+      color: #7A4A0A;
+      word-break: keep-all;
+    }
+
+    /* Divider */
+    hr {
+      border: none;
+      border-top: 1px solid #E8E6DF;
+      margin: 3rem 0 2.25rem;
+    }
+
+    /* Author card */
+    .author-card {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      background: #F4F2EB;
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+    }
+    .author-avatar-lg {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #FEF3E2;
+      border: 1px solid #FAC775;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+      color: #BA7517;
+      flex-shrink: 0;
+    }
+    .author-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: #111110;
+      margin-bottom: 5px;
+    }
+    .author-bio {
+      font-size: 13px;
+      color: #5F5E5A;
+      line-height: 1.65;
+      margin-bottom: 8px;
+      word-break: keep-all;
+    }
+    .author-link {
+      font-size: 13px;
+      color: #BA7517;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .author-link:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      .page-wrap { padding: 2.5rem 1.25rem 4rem; }
+      .pull-quote { padding: 1.25rem 1.25rem; }
+      .author-card { flex-direction: column; }
+    }
+
+    /* Series navigation */
+    .series-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px 14px;
+      font-size: 12.5px;
+      color: #888780;
+      margin-bottom: 1.75rem;
+    }
+    .series-bar a {
+      color: #5F5E5A;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .series-bar a:hover { color: #BA7517; }
+    .series-bar a[aria-current="page"] { color: #BA7517; font-weight: 700; }
+    .series-bar__label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #BA7517;
+    }
+
+    /* Branch cards (summary page) and next-read card (detail pages) */
+    .branch-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin: 2.25rem 0 1rem;
+    }
+    .branch-card {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 1.4rem 1.4rem 1.2rem;
+      background: #FFFFFF;
+      border: 1px solid #E8E6DF;
+      border-radius: 14px;
+      color: inherit;
+      text-decoration: none;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .article-body a.branch-card { color: inherit; font-weight: 400; }
+    .branch-card:hover {
+      transform: translateY(-2px);
+      border-color: #FAC775;
+      box-shadow: 0 14px 32px -20px rgba(186, 117, 23, 0.35);
+    }
+    .branch-card__who {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: #BA7517;
+    }
+    .branch-card__title {
+      font-size: 17.5px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #111110;
+      word-break: keep-all;
+    }
+    .branch-card__desc {
+      font-size: 14px;
+      line-height: 1.65;
+      color: #5F5E5A;
+      word-break: keep-all;
+    }
+    .branch-card__cta {
+      margin-top: auto;
+      padding-top: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #BA7517;
+    }
+    .branch-card__cta span { display: inline-block; transition: transform 0.2s ease; }
+    .branch-card:hover .branch-card__cta span { transform: translateX(3px); }
+    .branch-card--single { margin-top: 0.5rem; }
+
+    .closing-question {
+      font-size: 19px;
+      font-weight: 700;
+      color: #111110;
+      text-align: center;
+      margin: 2.5rem 0 0.5rem;
+      word-break: keep-all;
+    }
+
+    @media (max-width: 600px) {
+      .branch-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <article class="page-wrap">
+
+    <p class="eyebrow">SparkClaw Insights &middot; 2026</p>
+
+    <nav class="series-bar" aria-label="시리즈 목차">
+      <span class="series-bar__label">Series · 타이밍이 전부다</span>
+      <a href="/sparkclaw-insight-funding-timing-2026">통합편</a>
+      <span aria-hidden="true">·</span>
+      <a href="/sparkclaw-insight-8-month-rule">프리시드편</a>
+      <span aria-hidden="true">·</span>
+      <a href="/sparkclaw-insight-quantum-round" aria-current="page">시리즈A편</a>
+    </nav>
+
+    <h1>Quantum Round<br>— 아무도 안 가르쳐주는 비선형 펀딩</h1>
+
+    <div class="tag-row">
+      <span class="tag">#시리즈A</span>
+      <span class="tag">#QuantumRound</span>
+      <span class="tag">#990원전략</span>
+      <span class="tag">#밸류에이션</span>
+    </div>
+
+    <div class="byline-row">
+      <div class="avatar">JK</div>
+      <div>
+        <div class="byline-name">김호민 (Jimmy Kim)</div>
+        <div class="byline-meta">Co-Founder &amp; General Partner, SparkLabs Korea · 2026.11.02</div>
+      </div>
+    </div>
+
+    <div class="article-body">
+
+      <figure>
+        <img src="assets/Insights/quantum-round.jpg" alt="일정하게 이어지는 계단 위로 한 칸이 여러 단을 건너뛰어 떠 있는 모습" />
+      </figure>
+
+      <h2>선형의 함정부터 짚고 가겠습니다</h2>
+
+      <p>시리즈A를 준비하는 많은 창업자들이 "지난 라운드 Post가 100억 원이었으니 이번엔 200억 원"이라는 2x 룰을 당연하게 받아들입니다. 틀린 공식은 아닙니다. 하지만 이것이 전부라고 생각하는 순간, 정작 받을 수 있는 밸류에이션을 스스로 깎아 먹는 경우를 저는 수없이 봤습니다.</p>
+
+      <div class="pull-quote">
+        <p>물 들어올 때 노를 저어야 합니다. 펀딩 밸류에이션은 선형일 필요가 없습니다.</p>
+      </div>
+
+      <h2>Quantum Round의 조건은 세 가지뿐입니다</h2>
+
+      <ol>
+        <li>BEP를 달성했거나 이익이 나고 있을 것.</li>
+        <li>PSR이 Hot한 AI 관련 기업 기준 10배에 가까울 만큼 강력하고, 매출 성장률이 일관될 것.</li>
+        <li>시장의 타이밍이 맞을 것 — 지금 이 분야에 자금이 몰리고 있는가.</li>
+      </ol>
+
+      <p>이 세 가지가 맞아떨어지면, Pre 100억 원(Post 140억 원)에서 다음 라운드 Pre 350억 원으로 뛰는 것도 가능합니다. 2x가 아니라 2.5x, 때로는 그 이상입니다.</p>
+
+      <p>다만 순서를 반드시 지켜야 합니다. BEP 전에 이런 점프를 시도하면 오버밸류에이션의 함정에 빠지고, 다음 라운드 자체가 막혀 버립니다.</p>
+
+      <h2>990원 전략 — 숫자 하나로 펀딩 성공률이 바뀝니다</h2>
+
+      <figure>
+        <img src="assets/Insights/quantum-round/01.jpg" alt="마트 진열대에 붙은 990원 가격표" />
+      </figure>
+
+      <p>Pre를 100억 원, 200억 원 같은 라운드 넘버에 맞추지 마십시오. 90억 원, 170억 원, 190억 원으로 설정하십시오. 마트에서 1,000원이 아니라 990원인 것과 같은 심리입니다.</p>
+
+      <p>10억 원을 유치할 때 Pre 100억 원이면 9.09% 희석, Pre 90억 원이면 10.0% 희석입니다. 창업자 입장에서는 1%포인트 미만의 차이입니다. 하지만 투자자가 느끼는 "이건 합리적인 가격이다"라는 인상은 완전히 다릅니다.</p>
+
+      <p>실제 사례를 하나 말씀드리겠습니다. Pre 200억 원으로 30억 원을 모집하던 회사가 있었습니다. 반응이 신통치 않았습니다. Pre를 170억 원으로 조정했습니다. 희석률 차이는 창업자 입장에서 단 2%포인트(13%→15%)였습니다. 결과는 오버서브스크라이브 — 목표했던 30억 원이 아니라 58억 원이 모였습니다.</p>
+
+      <h2>오버서브스크라이브는 운이 아니라 설계입니다</h2>
+
+      <p>목표 금액의 100%를 공개적으로 발표하지 마십시오. 60~70%만 공식 타깃으로 내걸고, 그 라운드의 50% 수준을 책임질 Lead 투자자를 먼저 확보하십시오.</p>
+
+      <p>Lead가 생기는 순간 FOMO가 작동합니다. 머뭇거리던 기존 주주들이 Pro-rata 이상을 하겠다고 나서고, 소문을 들은 다른 VC들이 움직이기 시작합니다.</p>
+
+      <h2>마지막으로, Dilution보다 중요한 것이 있습니다</h2>
+
+      <p>시리즈A 단계에서 창업자들이 가장 많이 하는 실수는 희석률에 과도하게 집착해서, 정작 다음 마일스톤까지 버틸 자금을 충분히 받지 못하는 것입니다.</p>
+
+      <div class="pull-quote">
+        <p>질문은 이것입니다 — "이 돈이면 다음 라운드까지 의미 있는 성장을 만들 수 있는가?"</p>
+      </div>
+
+      <p>그렇다면, 지금 받으십시오. 그리고 그 성장을 바탕으로 비선형 점프를 준비하십시오.</p>
+
+      <a class="branch-card branch-card--single" href="/sparkclaw-insight-8-month-rule">
+        <span class="branch-card__who">함께 읽기 · 프리시드편</span>
+        <span class="branch-card__title">8개월 룰과 겨울나기 — 지금 창업자가 해야 할 계산</span>
+        <span class="branch-card__cta">프리시드편 읽기 <span>→</span></span>
+      </a>
+
+    </div>
+
+    <hr />
+
+    <div class="author-card">
+      <div class="author-avatar-lg">JK</div>
+      <div>
+        <div class="author-name">김호민 (Jimmy Kim)</div>
+        <div class="author-bio">SparkLabs Korea Co-Founder &amp; General Partner. 전 Nexon Group CEO, Studio Ex → Disney 인수. 400개+ 포트폴리오, 누적 투자유치 1조 9천억 원. 1인 AI 네이티브 창업자를 위한 스파크클로(SparkClaw) 운영 중.</div>
+        <a class="author-link" href="https://www.sparkclaw.co.kr">스파크클로 바로가기 → sparkclaw.co.kr</a>
+      </div>
+    </div>
+
+  </article>
+</body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>8개월 룰과 겨울나기 — 지금 창업자가 해야 할 계산 — Jimmy Kim | SparkClaw Insights</title>
+  <meta name="description" content="평균 펀딩 기간 5개월 + 입금 후 최소 런웨이 3개월. 프리시드 창업자가 지금 투자자 미팅을 시작해야 하는 이유와 버티는 법. SparkLabs Co-Founder 김호민(Jimmy Kim)의 기고문." />
+  <meta name="author" content="김호민 (Jimmy Kim)" />
+  <meta property="og:title" content="8개월 룰과 겨울나기 — 지금 창업자가 해야 할 계산" />
+  <meta property="og:description" content="평균 펀딩 기간 5개월 + 입금 후 최소 런웨이 3개월. 프리시드 창업자가 지금 투자자 미팅을 시작해야 하는 이유와 버티는 법. SparkLabs Co-Founder 김호민(Jimmy Kim)의 기고문." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.sparkclaw.co.kr/sparkclaw-insight-8-month-rule" />
+  <meta property="og:image" content="https://www.sparkclaw.co.kr/assets/Insights/8-month-rule.jpg" />
+  <meta property="article:author" content="김호민 (Jimmy Kim)" />
+  <meta property="article:published_time" content="2026-11-02" />
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Pretendard Variable', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+      background: #FAFAF8;
+      color: #1a1a18;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+    }
+
+    /* Header */
+    .eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #BA7517;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(24px, 4vw, 32px);
+      font-weight: 700;
+      line-height: 1.3;
+      color: #111110;
+      margin-bottom: 1.25rem;
+      word-break: keep-all;
+    }
+
+    /* Tags */
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 1.5rem;
+    }
+    .tag {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 11px;
+      border-radius: 20px;
+      background: #FEF3E2;
+      color: #854F0B;
+      border: 1px solid #FAC775;
+      letter-spacing: 0.02em;
+    }
+
+    /* Byline */
+    .byline-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 1.25rem 0;
+      border-top: 1px solid #E8E6DF;
+      border-bottom: 1px solid #E8E6DF;
+      margin-bottom: 2.5rem;
+    }
+    .avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: #FEF3E2;
+      border: 1px solid #FAC775;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      color: #BA7517;
+      flex-shrink: 0;
+    }
+    .byline-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: #111110;
+      margin-bottom: 2px;
+    }
+    .byline-meta {
+      font-size: 12px;
+      color: #888780;
+    }
+
+    /* Body */
+    .article-body {
+      font-size: 16.5px;
+      line-height: 1.9;
+      color: #2c2c2a;
+      word-break: keep-all;
+    }
+    .article-body p {
+      margin-bottom: 1.5rem;
+    }
+    .article-body h2 {
+      font-size: clamp(19px, 2.6vw, 23px);
+      font-weight: 700;
+      line-height: 1.4;
+      color: #111110;
+      margin: 2.75rem 0 1rem;
+      word-break: keep-all;
+    }
+    .article-body ol {
+      margin: 0 0 1.5rem 1.35rem;
+    }
+    .article-body ol li {
+      margin-bottom: 0.6rem;
+    }
+    .article-body figure {
+      margin: 2.25rem 0;
+    }
+    .article-body figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+    }
+    .article-body figcaption {
+      font-size: 13px;
+      color: #888780;
+      margin-top: 10px;
+      text-align: center;
+      word-break: keep-all;
+    }
+    .article-body a { color: #BA7517; font-weight: 600; }
+
+    /* Pull quote */
+    .pull-quote {
+      margin: 2.25rem 0;
+      padding: 1.5rem 1.75rem;
+      background: #FEF3E2;
+      border-left: 4px solid #EF9F27;
+      border-radius: 0 8px 8px 0;
+    }
+    .pull-quote p {
+      margin: 0;
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 1.65;
+      color: #7A4A0A;
+      word-break: keep-all;
+    }
+
+    /* Divider */
+    hr {
+      border: none;
+      border-top: 1px solid #E8E6DF;
+      margin: 3rem 0 2.25rem;
+    }
+
+    /* Author card */
+    .author-card {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      background: #F4F2EB;
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+    }
+    .author-avatar-lg {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #FEF3E2;
+      border: 1px solid #FAC775;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+      color: #BA7517;
+      flex-shrink: 0;
+    }
+    .author-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: #111110;
+      margin-bottom: 5px;
+    }
+    .author-bio {
+      font-size: 13px;
+      color: #5F5E5A;
+      line-height: 1.65;
+      margin-bottom: 8px;
+      word-break: keep-all;
+    }
+    .author-link {
+      font-size: 13px;
+      color: #BA7517;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .author-link:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      .page-wrap { padding: 2.5rem 1.25rem 4rem; }
+      .pull-quote { padding: 1.25rem 1.25rem; }
+      .author-card { flex-direction: column; }
+    }
+
+    /* Series navigation */
+    .series-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px 14px;
+      font-size: 12.5px;
+      color: #888780;
+      margin-bottom: 1.75rem;
+    }
+    .series-bar a {
+      color: #5F5E5A;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .series-bar a:hover { color: #BA7517; }
+    .series-bar a[aria-current="page"] { color: #BA7517; font-weight: 700; }
+    .series-bar__label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #BA7517;
+    }
+
+    /* Branch cards (summary page) and next-read card (detail pages) */
+    .branch-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin: 2.25rem 0 1rem;
+    }
+    .branch-card {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 1.4rem 1.4rem 1.2rem;
+      background: #FFFFFF;
+      border: 1px solid #E8E6DF;
+      border-radius: 14px;
+      color: inherit;
+      text-decoration: none;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .article-body a.branch-card { color: inherit; font-weight: 400; }
+    .branch-card:hover {
+      transform: translateY(-2px);
+      border-color: #FAC775;
+      box-shadow: 0 14px 32px -20px rgba(186, 117, 23, 0.35);
+    }
+    .branch-card__who {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: #BA7517;
+    }
+    .branch-card__title {
+      font-size: 17.5px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #111110;
+      word-break: keep-all;
+    }
+    .branch-card__desc {
+      font-size: 14px;
+      line-height: 1.65;
+      color: #5F5E5A;
+      word-break: keep-all;
+    }
+    .branch-card__cta {
+      margin-top: auto;
+      padding-top: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #BA7517;
+    }
+    .branch-card__cta span { display: inline-block; transition: transform 0.2s ease; }
+    .branch-card:hover .branch-card__cta span { transform: translateX(3px); }
+    .branch-card--single { margin-top: 0.5rem; }
+
+    .closing-question {
+      font-size: 19px;
+      font-weight: 700;
+      color: #111110;
+      text-align: center;
+      margin: 2.5rem 0 0.5rem;
+      word-break: keep-all;
+    }
+
+    @media (max-width: 600px) {
+      .branch-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <article class="page-wrap">
+
+    <p class="eyebrow">SparkClaw Insights &middot; 2026</p>
+
+    <nav class="series-bar" aria-label="시리즈 목차">
+      <span class="series-bar__label">Series · 타이밍이 전부다</span>
+      <a href="/sparkclaw-insight-funding-timing-2026">통합편</a>
+      <span aria-hidden="true">·</span>
+      <a href="/sparkclaw-insight-8-month-rule" aria-current="page">프리시드편</a>
+      <span aria-hidden="true">·</span>
+      <a href="/sparkclaw-insight-quantum-round">시리즈A편</a>
+    </nav>
+
+    <h1>8개월 룰과 겨울나기<br>— 지금 창업자가 해야 할 계산</h1>
+
+    <div class="tag-row">
+      <span class="tag">#프리시드</span>
+      <span class="tag">#8개월룰</span>
+      <span class="tag">#런웨이</span>
+      <span class="tag">#TIPS</span>
+    </div>
+
+    <div class="byline-row">
+      <div class="avatar">JK</div>
+      <div>
+        <div class="byline-name">김호민 (Jimmy Kim)</div>
+        <div class="byline-meta">Co-Founder &amp; General Partner, SparkLabs Korea · 2026.11.02</div>
+      </div>
+    </div>
+
+    <div class="article-body">
+
+      <figure>
+        <img src="assets/Insights/8-month-rule.jpg" alt="첫눈이 내리는 겨울밤, 스탠드 불빛 아래 노트북으로 일하는 창업자의 뒷모습" />
+      </figure>
+
+      <h2>지금이 몇 시인지부터 봅시다</h2>
+
+      <p>오늘은 2026년 11월 2일입니다. 하반기 펀딩 골든 윈도우(9~11월)는 이제 한 달이 채 남지 않았습니다.</p>
+
+      <p>많은 프리시드 창업자들이 착각하는 것이 있습니다. "아직 준비가 덜 됐으니 내년 봄에 움직이자." 틀린 말은 아니지만, 그 '봄'이 정확히 언제인지 역산해 본 분은 많지 않습니다.</p>
+
+      <p>저희가 400개 넘는 투자를 집행하며 쌓은 데이터로 보면, 투자 검토부터 실제 집행까지 평균 5개월이 걸립니다. 그리고 집행일 이후 최소 3개월의 런웨이가 확보되어 있어야 합니다. 이 둘을 더하면 8개월. 내년 3~6월 윈도우에 입금을 받으려면, 지금, 늦어도 1~2월에는 투자자 미팅을 시작해야 한다는 계산이 나옵니다.</p>
+
+      <figure>
+        <img src="assets/Insights/8-month-rule/01.jpg" alt="빨간 펜으로 여러 날짜에 동그라미를 치고 몇 주에 걸쳐 화살표를 그은 달력" />
+      </figure>
+
+      <div class="pull-quote">
+        <p>"펀딩도 사람이 하는 일입니다."</p>
+      </div>
+
+      <p>VC 심사역도 사람입니다. 연말연시와 설 연휴를 끼고 나면 의사결정이 자연스럽게 늘어집니다. 저도 매년 이 시기에 "왜 이렇게 연락이 느려졌지?" 하는 창업자들의 메시지를 받습니다.</p>
+
+      <p>답은 간단합니다. 투자사 내부도 연말 결산과 내년도 펀드 플랜으로 바쁩니다. 이 계절성을 모르고 "12월에 미팅 잡고 1월에 클로징하면 되겠지"라고 생각하면, 현금이 바닥나는 순간까지 아무 일도 일어나지 않습니다.</p>
+
+      <h2>런웨이가 빠듯하다면 — 버티기 모드로 전환하십시오</h2>
+
+      <p>프리시드 단계에서 제가 가장 많이 받는 질문은 "밸류에이션을 어떻게 잡아야 하나요"입니다. 하지만 그 전에 먼저 봐야 할 것이 있습니다. 지금 현금이 얼마 있고, 몇 개월을 버틸 수 있는가. 이익률이 먼저고, 펀딩은 그다음입니다.</p>
+
+      <p>프리시드·초기 단계라면 저희 같은 액셀러레이터, 창업기획자를 통한 TIPS 연계를 꼭 검토하시길 권합니다. 2026년 기준으로는 SparkLabs 같은 TIPS 운영사가 2억 원 이상(비수도권 기업은 1억 원 이상)을 투자하고 추천하면, 정부가 최대 2년간 R&amp;D 자금을 최대 8억 원까지 매칭하는 구조입니다. 일반트랙을 마친 뒤 후속투자 5억 원 이상을 유치하면, 딥테크트랙으로 최대 3년간 15억 원까지 이어서 확보할 수 있습니다.</p>
+
+      <p>이때 밸류에이션은 통상 Pre 30억 원 수준입니다. 제품도 매출도 없는 단계에서는 이것이 사실상의 상한선입니다. Serial Entrepreneur에 강력한 팀일 때나 30억 원 근처까지 갈 수 있고, 처음 창업하는 팀이라면 그보다 낮게 잡는 것이 현실적입니다.</p>
+
+      <h2>절박한 상태로 협상 테이블에 앉지 마십시오</h2>
+
+      <p>가장 중요한 것은, 돈이 없어서 절박한 상태로 협상 테이블에 앉지 않는 것입니다.</p>
+
+      <p>런웨이가 1~2개월 남은 상태에서 미팅에 들어가면 협상력은 0입니다. 투자자는 항상 남은 런웨이를 확인합니다.</p>
+
+      <div class="pull-quote">
+        <p>지금 이 순간, 당신의 현금과 런웨이, 그리고 다음 라운드까지 역산한 타임라인을 숫자로 적어 보십시오. 그것이 오늘 가장 먼저 해야 할 일입니다.</p>
+      </div>
+
+      <a class="branch-card branch-card--single" href="/sparkclaw-insight-quantum-round">
+        <span class="branch-card__who">이어서 읽기 · 시리즈A편</span>
+        <span class="branch-card__title">Quantum Round — 아무도 안 가르쳐주는 비선형 펀딩</span>
+        <span class="branch-card__cta">시리즈A편 읽기 <span>→</span></span>
+      </a>
+
+    </div>
+
+    <hr />
+
+    <div class="author-card">
+      <div class="author-avatar-lg">JK</div>
+      <div>
+        <div class="author-name">김호민 (Jimmy Kim)</div>
+        <div class="author-bio">SparkLabs Korea Co-Founder &amp; General Partner. 전 Nexon Group CEO, Studio Ex → Disney 인수. 400개+ 포트폴리오, 누적 투자유치 1조 9천억 원. 1인 AI 네이티브 창업자를 위한 스파크클로(SparkClaw) 운영 중.</div>
+        <a class="author-link" href="https://www.sparkclaw.co.kr">스파크클로 바로가기 → sparkclaw.co.kr</a>
+      </div>
+    </div>
+
+  </article>
+</body>
+</html>

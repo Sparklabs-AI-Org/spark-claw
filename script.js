@@ -642,6 +642,17 @@
   // If `image` is omitted, falls back to a gradient cover with topic tag.
   const insightsItems = [
     {
+      url: "/sparkclaw-insight-funding-timing-2026",
+      date: "2026-11-02",
+      author: { ko: "김호민 (Jimmy Kim)", en: "Jimmy Kim" },
+      topic: { ko: "#펀딩타이밍", en: "#Funding Timing" },
+      title: {
+        ko: "타이밍이 전부다 — 2026년 11월, 창업자가 지금 봐야 할 것",
+        en: "Timing is everything — what founders should look at this November"
+      },
+      image: "assets/Insights/funding-timing-2026.jpg"
+    },
+    {
       url: "/sparkclaw-insight-korea-builders",
       date: "2026-06-27",
       author: { ko: "김호민 (Jimmy Kim)", en: "Jimmy Kim" },
