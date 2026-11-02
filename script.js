@@ -642,15 +642,26 @@
   // If `image` is omitted, falls back to a gradient cover with topic tag.
   const insightsItems = [
     {
-      url: "/sparkclaw-insight-funding-timing-2026",
+      url: "/sparkclaw-insight-8-month-rule",
       date: "2026-11-02",
       author: { ko: "김호민 (Jimmy Kim)", en: "Jimmy Kim" },
-      topic: { ko: "#펀딩타이밍", en: "#Funding Timing" },
+      topic: { ko: "#프리시드", en: "#Pre-seed" },
       title: {
-        ko: "타이밍이 전부다 — 2026년 11월, 창업자가 지금 봐야 할 것",
-        en: "Timing is everything — what founders should look at this November"
+        ko: "8개월 룰과 겨울나기 — 지금 창업자가 해야 할 계산",
+        en: "The 8-month rule — the math pre-seed founders should do now"
       },
-      image: "assets/Insights/funding-timing-2026.jpg"
+      image: "assets/Insights/8-month-rule.jpg"
+    },
+    {
+      url: "/sparkclaw-insight-quantum-round",
+      date: "2026-11-02",
+      author: { ko: "김호민 (Jimmy Kim)", en: "Jimmy Kim" },
+      topic: { ko: "#시리즈A", en: "#Series A" },
+      title: {
+        ko: "Quantum Round — 아무도 안 가르쳐주는 비선형 펀딩",
+        en: "Quantum Round — the non-linear funding nobody teaches"
+      },
+      image: "assets/Insights/quantum-round.jpg"
     },
     {
       url: "/sparkclaw-insight-korea-builders",
