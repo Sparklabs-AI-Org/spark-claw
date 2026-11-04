@@ -101,7 +101,7 @@
         },
         quote: {
           text: "“에이전틱 AI 시대에는 뛰어난 창업가 한 명이 AI 팀과 함께 시장을 바꿀 수 있습니다. SparkClaw는 그런 창업가들을 가장 먼저, 가장 깊이 이해하기 위한 프로그램입니다.”",
-          cite: "김유진 · 스파크랩 대표"
+          cite: "김유진 · 스파크랩 공동대표"
         },
         facts: [
           "OpenAI · Anthropic · Perplexity · xAI · Groq 투자 이력",
@@ -260,7 +260,7 @@
         },
         quote: {
           text: "“In the age of Agentic AI, a single outstanding founder can change a market alongside an AI team. SparkClaw exists to understand those founders — earlier and more deeply than anyone else.”",
-          cite: "Eugene Kim · Managing Partner, SparkLabs"
+          cite: "Eugene Kim · General Partner, SparkLabs"
         },
         facts: [
           "Investments include OpenAI, Anthropic, Perplexity, xAI & Groq",
