@@ -89,6 +89,11 @@ Bilingual (KO/EN) **static landing site**. Everything runs client-side, no frame
 `.vercelignore` keeps repo-only files (this CLAUDE.md, README, `.claude/`, the two stale `index.*.html`
 variants) out of the deploy. Add any new internal-only file there, or it will be publicly served.
 
+`sitemap.xml` + `robots.txt` list every public page for search engines. When adding a new public page
+(e.g. a new insight column), add its clean URL to `sitemap.xml`, give it
+`<link rel="canonical" href="https://www.sparkclaw.co.kr/<slug>" />` next to its `og:url`, and bump
+`<lastmod>` on pages whose content changes.
+
 ### i18n system (`script.js`)
 
 All copy lives in a single `dict` object at the top of `script.js` with `ko` and `en` keys. HTML
