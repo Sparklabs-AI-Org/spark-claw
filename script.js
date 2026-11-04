@@ -85,7 +85,7 @@
         title: "선발은 네 단계로 진행됩니다.",
         sub: "이번 심사에서 투자로 이어지지 않아도, SparkClaw 커뮤니티와의 인연은 이어집니다.",
         steps: [
-          { title: "온라인 지원",    desc: "홈페이지 상단의 지원서 양식을 작성하여 제출." },
+          { title: "온라인 지원",    desc: "모집 기간에 홈페이지에서 지원서를 작성하여 제출. 모집 전에는 상단의 알림 신청으로 오픈 소식을 먼저 받아보세요." },
           { title: "서류 스크리닝",  desc: "학력 및 경력 무관, AI를 ‘팀원’처럼 운용한 방식을 중심으로 평가." },
           { title: "집중 부트캠프",  desc: "SparkClaw 크레딧 제공, 스파크랩 파트너들과 함께하는 몰입형 부트캠프 진행." },
           { title: "최종 투자 심사", desc: "통과 시 초기 투자 및 스파크랩 포트폴리오사 동일 혜택 제공." }
@@ -96,7 +96,7 @@
         label: "04 — About SparkLabs",
         title: "OpenAI, Anthropic, Perplexity에 투자한 액셀러레이터.",
         body: {
-          p1: "스파크랩은 OpenAI, Anthropic, Perplexity는 물론, 올해 SpaceX에 인수된 xAI와 지난해 NVIDIA에 인수된 Groq에 투자한 바 있습니다.",
+          p1: "스파크랩은 OpenAI, Anthropic, Perplexity는 물론, 2026년 SpaceX에 합병된 xAI와 2025년 NVIDIA와 기술 라이선스 계약을 맺고 핵심 인력이 합류한 Groq에 투자한 바 있습니다.",
           p2: "이제 스파크랩은 SparkClaw를 통해 국내 AI 분야의 우수 창업자를 선제 발굴, 육성하고자 합니다."
         },
         quote: {
@@ -117,6 +117,8 @@
         publishers: {
           "donga.com": "동아일보",
           "mk.co.kr":  "매일경제",
+          "mt.co.kr":  "머니투데이",
+          "asiae.co.kr": "아시아경제",
           "default":   "보도"
         }
       },
@@ -139,9 +141,9 @@
           { q: "온라인 중심인가요, 오프라인 모임도 있나요?",
             a: "SparkClaw 프로그램은 온라인/오프라인의 다양한 워크샵과 강의 및 세션으로 이루어져 있습니다. 또한, AI 창업가 커뮤니티 형성을 위한 정기 오프라인 밋업을 진행할 예정입니다." },
           { q: "해외 창업가도 지원할 수 있나요?",
-            a: "한국 시장 진출 또는 한국 기반 창업 계획이 있다면 지원 가능합니다. 세부 자격 요건은 1기 모집 공고를 통해 공개됩니다." },
-          { q: "1기 모집 일정은 어떻게 되나요?",
-            a: "지원서 접수는 6월 8일부터 6월 28일까지이며, 서류 심사·인터뷰를 거쳐 8월 초 부트캠프, 10월 말부터 본 프로그램이 진행됩니다.<br>상세 일정은 홈페이지 ‘일정’ 섹션에서 확인하실 수 있습니다." },
+            a: "한국 시장 진출 또는 한국 기반 창업 계획이 있다면 지원 가능합니다. 세부 자격 요건은 다음 배치 모집 공고를 통해 공개됩니다." },
+          { q: "1기 일정과 다음 배치 모집은 어떻게 되나요?",
+            a: "1기(2026)는 6월 지원서 접수와 서류 심사·인터뷰, 8월 초~10월 초 부트캠프를 거쳐 현재 본 프로그램(10월 말~12월 중순)이 진행 중입니다.<br>다음 배치 모집 일정은 확정되는 대로 ‘알림 신청’을 남겨주신 분들께 가장 먼저 안내해 드립니다." },
           { q: "SparkClaw에서 제공되는 AI 크레딧은 언제 제공되나요?",
             a: "심사 과정을 통과하여 부트캠프에 참여하는 팀들에게 단계별로 나누어 제공됩니다." }
         ]
@@ -154,7 +156,7 @@
       timeline: {
         label: "Program Timeline",
         title: "Cohort 01 일정",
-        sub: "SparkClaw 1기의 주요 일정을 안내합니다.",
+        sub: "SparkClaw 1기(2026)의 주요 일정입니다. 현재 본 프로그램이 진행 중입니다.",
         items: [
           { date: "6월 8일 (월) ~ 6월 28일 (일)", title: "지원서 접수", desc: "6월 8일 자정 오픈, 6월 28일 자정 마감" },
           { date: "6월 29일 (월) ~ 7월 10일 (금)", title: "서류 심사", desc: "제출된 지원서 기반 1차 심사 진행" },
@@ -242,7 +244,7 @@
         title: "Four steps, one clear path.",
         sub: "Not funded this round? Your relationship with the SparkClaw community doesn't end there.",
         steps: [
-          { title: "Online application", desc: "Fill out and submit the application form at the top of this page." },
+          { title: "Online application", desc: "Submit the application on this site while applications are open. Until then, sign up above to hear first when they open." },
           { title: "Screening",          desc: "Background and credentials don't matter. We focus on how you've operated AI as a teammate." },
           { title: "Intensive bootcamp", desc: "SparkClaw credits provided. A focused bootcamp alongside SparkLabs partners." },
           { title: "Investment decision", desc: "Founders who advance receive the initial check and the same benefits given to every SparkLabs portfolio company." }
@@ -253,7 +255,7 @@
         label: "04 — About SparkLabs",
         title: "Investors in OpenAI, Anthropic, and Perplexity.",
         body: {
-          p1: "SparkLabs has backed OpenAI, Anthropic, and Perplexity — alongside xAI (acquired by SpaceX this year) and Groq (acquired by NVIDIA last year).",
+          p1: "SparkLabs has backed OpenAI, Anthropic, and Perplexity — alongside xAI (merged into SpaceX in 2026) and Groq (which signed a technology licensing deal with NVIDIA in 2025, with its core team joining NVIDIA).",
           p2: "Now, with SparkClaw, SparkLabs is going earlier — discovering and building Korea's strongest AI-native founders ahead of the rest of the market."
         },
         quote: {
@@ -274,6 +276,8 @@
         publishers: {
           "donga.com": "Donga Ilbo",
           "mk.co.kr":  "Maeil Business",
+          "mt.co.kr":  "Money Today",
+          "asiae.co.kr": "Asia Economy",
           "default":   "Press"
         }
       },
@@ -297,8 +301,8 @@
             a: "SparkClaw runs through a mix of online and offline workshops, lectures, and sessions. We also host regular offline meetups to build a working community of AI founders." },
           { q: "Can international founders apply?",
             a: "Yes — if your roadmap includes targeting or expanding into the Korean market." },
-          { q: "What is the Cohort 01 schedule?",
-            a: "Applications are open from June 8 to June 28. After screening and interviews, the bootcamp runs from early August to early October, followed by the main program from late October to mid-December.<br>See the ‘Timeline’ section on this page for full details." },
+          { q: "What happened in Cohort 01, and when is the next batch?",
+            a: "Cohort 01 (2026) took applications in June, ran screening and interviews, then a bootcamp from early August to early October. The main program is now underway (late October to mid-December).<br>Dates for the next batch will go first to everyone who signs up for notifications." },
           { q: "When are the AI credits provided by SparkClaw distributed?",
             a: "AI credits are distributed in stages to teams that pass the screening and join the bootcamp." }
         ]
@@ -311,7 +315,7 @@
       timeline: {
         label: "Program Timeline",
         title: "Cohort 01 Schedule",
-        sub: "Key dates for SparkClaw's inaugural cohort.",
+        sub: "Key dates for SparkClaw's inaugural cohort (2026). The main program is now underway.",
         items: [
           { date: "Jun 8 (Mon) – Jun 28 (Sun)", title: "Application Period", desc: "Opens midnight Jun 8, closes midnight Jun 28" },
           { date: "Jun 29 (Mon) – Jul 10 (Fri)", title: "Application Review", desc: "First-round screening based on submitted applications" },

@@ -1,0 +1,6 @@
+# Repo-only files: kept in git, never served on sparkclaw.co.kr
+CLAUDE.md
+README.md
+.claude
+index.all-in-one.html
+index.deploy.html

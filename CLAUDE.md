@@ -86,6 +86,9 @@ Bilingual (KO/EN) **static landing site**. Everything runs client-side, no frame
 | `index.deploy.html` | — | Stale alternate variant — not deployed, don't edit unless asked |
 | `index.all-in-one.html` | — | Stale self-contained single-file variant — not deployed |
 
+`.vercelignore` keeps repo-only files (this CLAUDE.md, README, `.claude/`, the two stale `index.*.html`
+variants) out of the deploy. Add any new internal-only file there, or it will be publicly served.
+
 ### i18n system (`script.js`)
 
 All copy lives in a single `dict` object at the top of `script.js` with `ko` and `en` keys. HTML
